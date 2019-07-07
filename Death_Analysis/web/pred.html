@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Death Analysis</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  .t1{
+    background-color: black;
+  }
+  .t2{
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<nav class="t1 navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Death Analysis</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="nav navbar-nav">
+          <li><a  href="index.html">About</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a style="color: white;" href="#">Prediction</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <!--    <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Login</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<form action = "/cgi-bin/t.py" method = "POST">
+<div class="row">
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">State</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="RAJASTHAN">RAJASTHAN</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">district</label>
+        <select class="form-control"  name = "dropdown" id="exampleFormControlSelect1">
+          <option value = "JHUNJHUNUN">JHUNJHUNUN</option>
+          <option value="SIROHI">SIROHI</option>
+          <option value="ALWAR">ALWAR</option>
+          <option value="DHAULPUR">DHAULPUR</option>
+          <option value="BIKANER">BIKANER</option>
+          <option value="JHALAWAR">JHALAWAR</option>
+          <option value="JODHPUR">JODHPUR</option>
+          <option value="JAIPUR">JAIPUR</option>
+          <option value="JAISALMER">JAISALMER</option>
+          <option value="KOTA">KOTA</option>
+          <option value="SIKAR">SIKAR</option>
+          <option value="TONK">TONK</option>
+          <option value="UDAIPUR">UDAIPUR</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">age</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+          <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+          <option value="11">11</option><option value="12">2</option><option value="13">13</option><option value="14">14</option><option value="15">15</option>
+          <option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>
+          <option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option>
+          <option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">treatment_source</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Government Hospital">Government Hospital</option>
+          <option value="No Medical attention">No Medical attention</option>
+          <option value="Private Hospital">Private Hospital</option>
+          <option value="Private Dispensary/Clinic">Private Dispensary/Clinic</option>
+          <option value="Government CHC">Government CHC</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">month_of_death</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">year_of_death</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="2008">2008</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">death_symptoms</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Congenital/birth defects">Congenital/birth defects</option>
+          <option value="Hypothermia">Hypothermia</option>
+          <option value="Fever with Jaundice">Fever with Jaundice</option>
+          <option value="Infections">Infections</option>
+          <option value="Asphyxia">Asphyxia</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">is_death_associated_with_preg</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">marital_status</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Separated">Separated</option>
+          <option value="Married and Gauna performed">Married and Gauna performed</option>
+          <option value="Widow/Widower">Widow/Widower</option>
+          <option value="Never married">Never marrie</option>
+          <option value="Remarried">Remarried</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">highest_qualification</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Illiterate">Illiterate</option>
+          <option value="Literate With formal education-Below primary">Literate With formal education-Below primary</option>
+          <option value="Literate Without formal education">Literate Without formal education</option>
+          <option value="Literate With formal education-Primary">Literate With formal education-Primary</option>
+          <option value="Literate With formal education-Middle">Literate With formal education-Middle</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">drinking_water_source</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="Piped water into dwelling/yard/plot">Piped water into dwelling/yard/plot</option>
+          <option value="Hand pump">Hand pump</option>
+          <option value="Unprotected dug well">Unprotected dug well</option>
+          <option value="Surface water">Surface water</option>
+          <option value="other sources">other sources</option>
+        </select>
+        </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">toilet_used</label>
+        <select class="form-control" name = "dropdown" id="exampleFormControlSelect1">
+          <option value="To septic tank">To septic tank</option>
+          <option value="Flush/Pour flush latrine connected:-To piped sewer system">Flush/Pour flush latrine connected:-To piped sewer system</option>
+          <option value="Pit latrine with slab">Pit latrine with slab</option>
+          <option value="community toilet">community toilet</option>
+          <option value="open defecation(field, brush,jungle etc.)">open defecation(field, brush,jungle etc.)</option>
+        </select>
+        </div>
+    </div>
+  </div>
+<input type = "submit" value = "Submit" />
+</form>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

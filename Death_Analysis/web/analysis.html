@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Death Analysis</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  .t1{
+    background-color: black;
+  }
+  .t2{
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+	<nav class="t1 navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand">Death Analysis</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">About</a></li>
+          <li><a style="color: white;" href="#">Analysis</a></li>
+          <li><a href="pred.html">Prediction</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<!-- <li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<div class="container">
+  <div>
+    <h1>Empirical View</h1>
+  </div>
+  <hr>
+  <div>
+    <h2>Causes of death in recent decades</h2>
+    <div class="container">
+      <div class="jumbotron">
+            <p>In the chart below we provide a comparison of the number of people which died across specific years. This data is given as the total across all ages, and both sexes</p>
+      </div>
+      <div class="t3">
+        <div class="thumbnail">
+          
+
+<img id="myImage" src="deathno.png" >
+<div style="margin-left: 30%;">
+<label>Categories</label>
+<button onclick="document.getElementById('myImage').src='deathno.png'">over_all</button>
+<button onclick="document.getElementById('myImage').src='deathnod.png'">distrct</button>
+<button onclick="document.getElementById('myImage').src='deathnom.png'">marital_status</button>
+<button onclick="document.getElementById('myImage').src='deathnos.png'">sex</button>
+<button onclick="document.getElementById('myImage').src='deathnosym.png'">symptoms</button>
+</div>
+  </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div>
+    
+    <div class="container">
+      <h2>Causes of death due to some diseases</h2>
+      <div class="jumbotron">
+            <p>In the chart below we provide a comparison of the number of people which died as a result of specific causes. This data is given as the total across all ages, and both sexes</p>
+      </div>
+      <div class="t3">
+        <div class="thumbnail">
+  
+<img id="myImage1" src="symptom.png" >
+
+<div style="margin-left: 40%;">
+<label>Categories</label>
+<button onclick="document.getElementById('myImage1').src='symptom.png'">over_all</button>
+<button onclick="document.getElementById('myImage1').src='deathsyms.png'">sex</button>
+<button onclick="document.getElementById('myImage1').src='symdistrict.png'">district</button>
+
+</div>
+  </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
+
